@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="imagen/ico" href="niñahermosa.jpeg"/>
+        <title>Con Todo Mi Amor</title>
+        <style>
+            body {
+                background-image: url('elizalinda.jpg');
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            
+            button {
+                padding: 1em 2em;
+                background-color: rgba(255, 255, 255, 0.5); /* Color blanco con transparencia */
+                border: none;
+                color: black; /* Cambia el color del texto si lo deseas */
+                font-size: 1rem;
+                cursor: pointer;
+                border-radius: 5px; /* Bordes redondeados */
+                transition: background-color 0.3s; /* Transición suave al cambiar el color */
+            }
+
+            button:hover {
+                background-color: rgba(255, 255, 255, 0.8); /* Se vuelve más opaco al pasar el mouse */
+            }
+
+            a {
+                text-decoration: none; /* Quita el subrayado del enlace */
+                color: inherit; /* Hereda el color del botón */
+            }
+            
+            .greetings{
+                font-size: 7rem;
+                font-weight: 900;
+            }
+            .greetings > span{
+                animation: glow 2.5s ease-in-out infinite;
+            }
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+.greetings > span:nth-child(6){
+    animation-delay: 1s;
+}
+        </style>
+    </head>
+    <body>
+        <div class="greetings">
+            <span><button><a href="perdon.html">Disculpame</a></button></span>
+        </div>
+    </body>
+</html>

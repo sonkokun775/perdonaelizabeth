@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #8a9597, #e3e4e5);
+    color: #333;
+}
+
+/* Header general */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+/* Imagen dentro del header */
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen para cubrir el área */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Superposición de texto */
+.header-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.momentos, .disculpa {
+    margin-bottom: 2rem;
+}
+
+.poema {
+    font-style: italic;
+    color: #b30000;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #b30000;
+}
+
+.boton {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    background: #e3e4e5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.boton:hover {
+    background: #e3e4e5;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
